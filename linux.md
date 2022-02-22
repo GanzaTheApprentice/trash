@@ -1,5 +1,5 @@
 ## Part 1. Установка ОС
-![Cat-etc-issue](screens/Part 1 - cat-etc-issue.png)
+![Cat-etc-issue](screens/Part%201%20-%20cat-etc-issue.png)
 
 
 ## Part 2. Создание пользователя
