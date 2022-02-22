@@ -7,11 +7,11 @@
 - Добавление юзера: adduser %name%
 - Выдача прав: usermod -aG adm %name%
 
-![adduser](screens/Part 2 - adduser.png)
+![adduser](screens/Part%202%20-%20adduser.png)
 
 - Сменить юзера: su %name%
 
-![cat-etc-passwd](screens/Part 2 - cat-etc-passwd.png)
+![cat-etc-passwd](screens/Part%202%20-%20cat-etc-passwd.png)
 
 
 ## Part 3. Настройка сети ОС
@@ -20,7 +20,7 @@
 
 ##### Задать название машины:
 
-![new-hostname](screens/Part 3 - hostname.png)
+![new-hostname](screens/Part%203%20-%20hostname.png)
 
 ##### Задать временной пояс:
 - ls /usr/share/zoneinfo/
@@ -32,7 +32,7 @@
 ##### Названия сетевых интерфейсов:
 - ifconfig -a
 
-![ifconfig](screens/Part 3 - ifconfig.png)
+![ifconfig](screens/Part%203%20-%20ifconfig.png)
 
 - lo — это локальная петля, которая имеет IP-адрес 127.0.0.1 и предназначена для сетевого доступа к своему же компьютеру.
 - удалить ранее присвоеный ip: dhclient -r
@@ -42,103 +42,103 @@
 ##### Определить и вывести
 - Инфа о шлюзе: route -n
 
-![route-n](screens/Part 3 - route-n.png)
+![route-n](screens/Part%203%20-%20route-n.png)
 
 ##### Задать статичные ip gw dns
 - открываем файл с параметрами: vi /etc/netplan/*.yaml
 - добавляем статик ip и dns
 
-![netparms](screens/Part 3 - netparms.png)
+![netparms](screens/Part%203%20-%20netparms.png)
 
 - netplan apply
 - reboot
 - ip -r
 
-![new-ip](screens/Part 3 - static-ip.png)
+![new-ip](screens/Part%203%20-%20static-ip.png)
 
 ##### Пропинговать
 
-![ping](screens/Part 3 - ping-ips.png)
+![ping](screens/Part%203%20-%20ping-ips.png)
 
 
 ## Part 4. Обновление ОС
 - apt-get update
 - apt-get dist-upgrade
 
-![update](screens/Part 4 - update.png)
+![update](screens/Part%204%20-%20update.png)
 
 
 ## Part 5. Использование команды sudo
 - Выдача прав: usermod -aG sudo %name%
 
-![sudo](screens/Part 5 - sudo.png)
+![sudo](screens/Part%205%20-%20sudo.png)
 
 - sudo - команда которая позволяет вам запускать программы от имени суперпользователя.
 - переключение на другого юзера: su two
 - Сменить имя: sudo vi /etc/hostname
 
-![newhost](screens/Part 5 - newhost.png)
+![newhost](screens/Part%205%20-%20newhost.png)
 
-![newhost2](screens/Part 5 - newhost2.png)
+![newhost2](screens/Part%205%20-%20newhost2.png)
 
 
 ## Part 6. Установка и настройка службы времени
-![date](screens/Part 6 - date.png)
+![date](screens/Part%206%20-%20date.png)
 
 
 ## Part 7. Установка и использование текстовых редакторов
 - apt install %program%
 
 ##### VIM
-![vim-newfile](screens/Part 7 - vim-new-file.png)
+![vim-newfile](screens/Part%207%20-%20vim-new-file.png)
 - для выхода с сохр. команда: ":wq"
 
 ##### NANO
-![nano-newfile](screens/Part 7 - nano-new-file.png)
+![nano-newfile](screens/Part%207%20-%20nano-new-file.png)
 - для выхода комбинация клавиш: ctr + X и подтверждение изменений
 
 ##### JOE
-![joe-newfile](screens/Part 7 - nano-new-file.png)
+![joe-newfile](screens/Part%207%20-%20nano-new-file.png)
 - для выхода комбинация клавиш: ctr + K и ввод Q, затем подтверждение изменений
 
 ##### VIM
-![vim-edit](screens/Part 7 - vim-edit.png)
+![vim-edit](screens/Part%207%20-%20vim-edit.png)
 - для выхода без сохр. команда: ":q!"
 
 ##### NANO
-![nano-edit](screens/Part 7 - nano-edit.png)
+![nano-edit](screens/Part%207%20-%20nano-edit.png)
 - для выхода комбинация клавиш: ctr + X и НЕ подтверждение изменений
 
 ##### JOE
-![joe-edit](screens/Part 7 - joe-edit.png)
+![joe-edit](screens/Part%207%20-%20joe-edit.png)
 - для выхода комбинация клавиш: ctr + K и ввод Q, затем НЕ подтверждение изменений
 
 ##### VIM
 - для поиска слова: "/слово"
 
-![vim-search](screens/Part 7 - vim-search.png)
+![vim-search](screens/Part%207%20-%20vim-search.png)
 
 - для замены слова: ":s/слово/замена"
 
-![vim-replace](screens/Part 7 - vim-replace.png)
+![vim-replace](screens/Part%207%20-%20vim-replace.png)
 
 ##### NANO
 - для поиска комбинация клавиш: ctr + W
 
-![nano-search](screens/Part 7 - nano-search.png)
+![nano-search](screens/Part%207%20-%20nano-search.png)
 
 - для замены комбинация клавиш: ctr + W и затем ctr + R
 
-![nano-replace](screens/Part 7 - nano-replace.png)
+![nano-replace](screens/Part%207%20-%20nano-replace.png)
 
 ##### JOE
 - для поиска комбинация клавиш: ctr + K и ввод K
 
-![joe-search](screens/Part 7 - joe-search.png)
+![joe-search](screens/Part%207%20-%20joe-search.png)
 
 - для замены комбинация клавиш: ctr + K и ввод K и затем ввод R
 
-![joe-replace](screens/Part 7 - joe-replace.png)
+![joe-replace](screens/Part%207%20-%20joe-replace.png)
 
 
 ## Part 8. Установка и базовая настройка сервиса SSHD
@@ -160,10 +160,10 @@
 - ps ключ "-e" для отображения всех процессов | greb ssh - для вывода только процесса ssh
 - ps команда для отслеживания активных процессов в системе
 
-![ps](screens/Part 8 - ps.png)
+![ps](screens/Part%208%20-%20ps.png)
 
 ##### Вывод команды netstat -tan
-![netstat](screens/Part 8 - netstat-2022.png)
+![netstat](screens/Part%208%20-%20netstat-2022.png)
 
 - "-t" - Отображение текущего подключения в состоянии переноса нагрузки с процессора на сетевой адаптер при передаче данных ( "offload" )
 - "-a" - Отображение всех подключений и ожидающих портов
@@ -188,41 +188,41 @@
 - загрузку cpu
 - загрузку памяти
 
-![uptime](screens/Part 9 - uptime.png)
+![uptime](screens/Part%209%20-%20uptime.png)
 
 - pid процесса занимающего больше всего памяти: 1
 - pid процесса, занимающего больше всего процессорного времени: 1202
 
-![pids](screens/Part 9 - pids.png)
+![pids](screens/Part%209%20-%20pids.png)
 
 ##### HTOP
 - PID SORT
 
-![pid](screens/Part 9 - pid.png)
+![pid](screens/Part%209%20-%20pid.png)
 
 - PERCENT_CPU SORT
 
-![percent-cpu](screens/Part 9 - percent_cpu.png)
+![percent-cpu](screens/Part%209%20-%20percent_cpu.png)
 
 - PERCENT_MEM SORT
 
-![percent-mem](screens/Part 9 - percent_mem.png)
+![percent-mem](screens/Par%209%20-%20percent_mem.png)
 
 - TIME SORT
 
-![time](screens/Part 9 - time.png)
+![time](screens/Part%209%20-%20time.png)
 
 - отфильтрованному для процесса sshd
 
-![sshd](screens/Part 9 - sshd.png)
+![sshd](screens/Part%209%20-%20sshd.png)
 
 - с процессом syslog, найденным, используя поиск
 
-![syslog](screens/Part 9 - syslog.png)
+![syslog](screens/Part%209%20-%20syslog.png)
 
 - с добавленным выводом hostname, clock и uptime
 
-![settings](screens/Part 9 - settings.png)
+![settings](screens/Part%209%20-%20settings.png)
 
 
 ## Part 10. Использование утилиты fdisk
@@ -239,7 +239,7 @@
 - Размер свободного пространства: 3785044
 - Процент использования: 57%
 
-![df](screens/Part 10 - df.png)
+![df](screens/Part%2010%20-%20df.png)
 
 - Единица измерения: Килобайт
 
@@ -250,7 +250,7 @@
 - Процент использования: 57%
 - Тип файловой системы: журналируемая файловая система ext4
 
-![df-th](screens/Part 10 - df-th.png)
+![df-th](screens/Part%2010%20-%20df-th.png)
 
 
 ## Part 12. Использование утилиты du
@@ -260,7 +260,7 @@
 
 - du -B KB /var/log
 
-![du2](screens/Part 12 - du2.png)
+![du2](screens/Part%2012%20-%20du2.png)
 
 
 ## Part 13. Установка и использование утилиты ncdu
@@ -268,39 +268,39 @@
 
 - ncdu /home
 
-![ncdu-home](screens/Part 13 - ncdu-home.png)
+![ncdu-home](screens/Part%2013%20-%20ncdu-home.png)
 
 - ncdu /var
 
-![ncdu-var](screens/Part 13 - ncdu-var.png)
+![ncdu-var](screens/Part%2013%20-%20ncdu-var.png)
 
 - ncdu /var/log
 
-![ncdu-var-log](screens/Part 13 - ncdu-var-log.png)
+![ncdu-var-log](screens/Part%2013%20-%20ncdu-var-log.png)
 
 
 ## Part 14. Работа с системными журналами
 
-![login](screens/Part 14 - login.png)
+![login](screens/Part%2014%20-%20login.png)
 
 - systemctl restart sshd
 
-![restart](screens/Part 14 - restart.png)
+![restart](screens/Part%2014%20-%20restart.png)
 
 
 ## Part 15. Использование планировщика заданий CRON
 - Cоздание файла расписания: crontab -e
 
-![cronlog](screens/Part 15 - cronlog.png)
+![cronlog](screens/Part%2015%20-%20cronlog.png)
 
 - Вывод содержимого расписания: crontab -l
 
-![tasks](screens/Part 15 - tasks.png)
+![tasks](screens/Part%2015%20-%20tasks.png)
 
 - Отработка планировщика
 
-![complete](screens/Part 15 - complete.png)
+![complete](screens/Part%2015%20-%20complete.png)
 
 - Удаление содержимого расписания: crontab -r
 
-![emptylist](screens/Part 15 - emptylist.png)
+![emptylist](screens/Part%2015%20-%20emptylist.png)
